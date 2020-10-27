@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiKey = 'AIzaSyDYfFkCx40kM4s1U0JM3exaurKwv9g5U7k';
+const apiKey = 'yourkey';
 
 export const params = {
     part: 'snippet',
