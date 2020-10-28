@@ -4,6 +4,7 @@ import MainVideo from './MainVideo';
 import SearchBar from './SearchBar';
 import { Container } from './Utils/Container';
 import { Row, Column } from './Utils/Grid';
+import { VideoList } from './VideoList';
 
 const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState<{}>();
@@ -17,6 +18,9 @@ const App = () => {
 			<Row>
 				<Column width="10">
 					<MainVideo video={selectedVideo} />
+				</Column>
+				<Column width="2">
+					<VideoList videos={videos} setSelectedVideo={setSelectedVideo} />
 				</Column>
 			</Row>
 		</Container>

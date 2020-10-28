@@ -34,6 +34,6 @@ export const Column = styled.div<ColumnProps>`
 	display: flex;
 	justify-content: center;
 	@media only screen and (min-width: 768px) {
-		${(props) => (props.width ? getWithGrid(props.width) : '8.33%')}
+		${(props) => (props.width ? getWithGrid(props.width) : 'width:8.33%')}
 	}
 `;

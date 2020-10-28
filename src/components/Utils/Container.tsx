@@ -18,7 +18,6 @@ export const Container = styled.div<ContainerProps>`
 	@media (max-width: 768px) {
 		min-width: 720px;
 	}
-
 	@media (max-width: 576px) {
 		min-width: 540px;
 	}
