@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { Input } from '../Utils/Input';
 import { StyledButton } from '../Utils/Button';
-import './index.css';
 
 interface props {
 	onSearch: (term: string) => Promise<void>;
@@ -24,7 +23,7 @@ const SearchBar: React.FC<props> = ({ onSearch }) => {
 				onChange={(e) => setTerm(e.currentTarget.value.toString())}
 				type="text"
 				width="medium"
-				className="adjust"
+				style={{ marginTop: '10px' }}
 			/>
 			<StyledButton onClick={() => onSearch(term)}>
 				<FaSearch />

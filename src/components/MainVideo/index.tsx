@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import { Header } from '../Utils/Header';
+import { VideoPlayer } from '../Utils/VideoPlayer';
 import { VideoWrapper } from '../Utils/Wrappers';
 
 interface props {
@@ -15,13 +15,8 @@ const MainVideo: React.FC<props> = ({ video }) => {
 	const url = `https://www.youtube.com/watch?v=${id.videoId}`;
 
 	return (
-		<VideoWrapper style={{ height: '25%' }}>
-			<ReactPlayer
-				controls
-				width="100%"
-				light={snippet.thumbnails.medium.url}
-				url={url}
-			/>
+		<VideoWrapper style={{ marginRight: '100px' }}>
+			<VideoPlayer thumbnail={snippet.thumbnails.medium.url} url={url} />
 			<Header>{snippet.title}</Header>
 			<span
 				style={{

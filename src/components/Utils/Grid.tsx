@@ -16,6 +16,7 @@ export const Row = styled.div`
 	height: auto;
 	float: left;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	box-sizing: border-box;
 	&:before {
@@ -23,6 +24,9 @@ export const Row = styled.div`
 	}
 	&:after {
 		clear: both;
+	}
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
 	}
 `;
 

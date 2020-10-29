@@ -19,8 +19,12 @@ const App = () => {
 				<Column width="10">
 					<MainVideo video={selectedVideo} />
 				</Column>
+
 				<Column width="2">
-					<VideoList videos={videos} setSelectedVideo={setSelectedVideo} />
+					<VideoList
+						videos={videos.filter((video) => video !== selectedVideo)}
+						setSelectedVideo={setSelectedVideo}
+					/>
 				</Column>
 			</Row>
 		</Container>

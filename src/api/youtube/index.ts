@@ -4,7 +4,7 @@ const apiKey = 'yourkey';
 
 export const params = {
     part: 'snippet',
-    maxResults: 5,
+    maxResults: 3,
     key: apiKey,
     type: 'video'
 };
