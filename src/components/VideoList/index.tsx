@@ -17,7 +17,6 @@ export const VideoList: React.FC<props> = ({ videos, setSelectedVideo }) => {
 					</VideoWrapper>
 				);
 			})}
-			;
 		</div>
 	);
 };
